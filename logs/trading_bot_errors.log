@@ -1,0 +1,78 @@
+2025-09-24 10:02:15,234 - trading_bot - ERROR - connect:85
+Message: Failed to connect to Binance API on first attempt
+Module: bot.py
+Path: /binance-trading-bot/bot.py
+Details: Connection timeout after 5 seconds, retrying...
+
+
+2025-09-24 10:12:45,567 - trading_bot - ERROR - place_market_order:251
+Message: Insufficient balance for order
+Module: bot.py
+Path: /binance-trading-bot/bot.py
+Details: Attempted to buy 1.0 BTCUSDT (~$43,250) with available balance: $150.00
+API Error Code: -2019
+API Error Message: Margin is insufficient
+
+
+2025-09-24 10:18:30,123 - trading_bot - ERROR - get_symbol_info:201
+Message: Invalid symbol provided
+Module: bot.py
+Path: /binance-trading-bot/bot.py
+Details: Symbol 'BTCUSD' not found. Available symbols: BTCUSDT, ETHUSDT, ADAUSDT...
+API Error Code: -1121
+API Error Message: Invalid symbol
+
+
+2025-09-24 10:22:10,789 - trading_bot - ERROR - place_limit_order:305
+Message: Price precision error
+Module: bot.py
+Path: /binance-trading-bot/bot.py
+Details: Price 43250.123456 exceeds allowed precision of 2 decimal places for BTCUSDT
+API Error Code: -1111
+API Error Message: Precision is over the maximum defined for this asset
+
+
+2025-09-24 10:28:55,456 - trading_bot - ERROR - check_order_status:358
+Message: Order not found
+Module: bot.py
+Path: /binance-trading-bot/bot.py
+Details: Order ID 99999999 does not exist or has been deleted
+API Error Code: -2013
+API Error Message: Order does not exist
+
+
+2025-09-24 10:33:20,678 - trading_bot - ERROR - websocket_handler:612
+Message: WebSocket connection lost
+Module: bot.py
+Path: /binance-trading-bot/bot.py
+Details: Connection dropped unexpectedly, attempting reconnection...
+Exception: ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback:
+  File "/binance-trading-bot/bot.py", line 610, in websocket_handler
+    await websocket.recv()
+  File "/usr/local/lib/python3.9/site-packages/websockets/protocol.py", line 568, in recv
+    await self.ensure_open()
+
+
+2025-09-24 10:37:45,234 - trading_bot - ERROR - validate_api_keys:123
+Message: API key validation failed
+Module: config.py
+Path: /binance-trading-bot/config.py
+Details: API key appears to be invalid or expired
+API Error Code: -1022
+API Error Message: Signature for this request is not valid
+
+
+2025-09-24 10:42:10,567 - trading_bot - CRITICAL - handle_exception:890
+Message: Unhandled exception in main trading loop
+Module: main.py
+Path: /binance-trading-bot/main.py
+Details: Critical error occurred, shutting down bot safely
+Exception: KeyError: 'price'
+Traceback:
+  File "/binance-trading-bot/main.py", line 45, in main_loop
+    current_price = ticker_data['price']
+  File "/binance-trading-bot/bot.py", line 234, in get_ticker
+    return response['price']
+KeyError: 'price'
+

@@ -1,0 +1,47 @@
+2025-09-24 10:00:00,000 - trading_bot - INFO - setup_logging:245 - System Event: Logging system initialized - Details: null
+2025-09-24 10:00:00,001 - trading_bot - INFO - __init__:89 - Trading bot logger initialized successfully
+2025-09-24 10:00:00,002 - trading_bot - INFO - __init__:90 - Log files created in logs/ directory
+2025-09-24 10:00:00,003 - trading_bot - INFO - __init__:91 - Main log: trading_bot.log, Error log: trading_bot_errors.log, Trade log: trades.log
+
+2025-09-24 10:00:01,125 - trading_bot - INFO - __init__:45 - Initializing Binance Futures Trading Bot
+2025-09-24 10:00:01,126 - trading_bot - INFO - __init__:46 - Using Binance Testnet: https://testnet.binancefuture.com
+2025-09-24 10:00:01,127 - trading_bot - INFO - connect:78 - Attempting to connect to Binance API...
+2025-09-24 10:00:01,456 - trading_bot - INFO - connect:82 - Successfully connected to Binance Futures Testnet
+2025-09-24 10:00:01,457 - trading_bot - INFO - get_account_info:156 - Account balance retrieved: 10000.00 USDT
+2025-09-24 10:00:01,458 - trading_bot - INFO - get_account_info:157 - Available margin: 9850.00 USDT
+
+2025-09-24 10:00:05,234 - trading_bot - INFO - get_symbol_info:189 - Fetching symbol info for BTCUSDT
+2025-09-24 10:00:05,567 - trading_bot - INFO - get_symbol_info:195 - BTCUSDT - Price: $43,250.50, 24h Change: +2.45%
+2025-09-24 10:00:05,568 - trading_bot - INFO - get_symbol_info:196 - Min quantity: 0.001, Max quantity: 1000.000
+
+2025-09-24 10:00:12,789 - trading_bot - INFO - place_market_order:234 - Placing market order: BUY 0.01 BTCUSDT
+2025-09-24 10:00:13,123 - trading_bot - INFO - place_market_order:245 - Market order executed successfully
+2025-09-24 10:00:13,124 - trading_bot - INFO - place_market_order:246 - Order ID: 12345678, Fill Price: $43,251.20
+
+2025-09-24 10:05:30,456 - trading_bot - INFO - place_limit_order:289 - Placing limit order: SELL 0.01 BTCUSDT at $43,500.00
+2025-09-24 10:05:30,789 - trading_bot - INFO - place_limit_order:298 - Limit order placed successfully
+2025-09-24 10:05:30,790 - trading_bot - INFO - place_limit_order:299 - Order ID: 12345679, Status: NEW
+
+2025-09-24 10:08:45,123 - trading_bot - INFO - check_order_status:345 - Checking status for order ID: 12345679
+2025-09-24 10:08:45,456 - trading_bot - INFO - check_order_status:352 - Order 12345679 status: FILLED at $43,485.75
+
+2025-09-24 10:15:22,678 - trading_bot - INFO - get_position_info:412 - Current positions: 0 open positions
+2025-09-24 10:15:22,679 - trading_bot - INFO - get_account_info:156 - Account balance updated: 10002.35 USDT (+$2.35 profit)
+
+2025-09-24 10:20:15,234 - trading_bot - WARNING - validate_order:178 - Order quantity 0.0005 below minimum 0.001 for BTCUSDT
+2025-09-24 10:20:15,235 - trading_bot - INFO - validate_order:179 - Adjusting quantity to minimum: 0.001
+
+2025-09-24 10:25:45,567 - trading_bot - INFO - place_stop_limit_order:456 - Placing stop-limit order: SELL 0.01 BTCUSDT, Stop: $42,800, Limit: $42,750
+2025-09-24 10:25:45,890 - trading_bot - INFO - place_stop_limit_order:465 - Stop-limit order placed successfully
+2025-09-24 10:25:45,891 - trading_bot - INFO - place_stop_limit_order:466 - Order ID: 12345680, Status: NEW
+
+2025-09-24 10:30:12,345 - trading_bot - INFO - cancel_order:523 - Cancelling order ID: 12345680
+2025-09-24 10:30:12,678 - trading_bot - INFO - cancel_order:530 - Order 12345680 cancelled successfully
+
+2025-09-24 10:35:00,123 - trading_bot - INFO - get_market_data:678 - Market data update - BTCUSDT: $43,180.25 (-0.16% from last check)
+2025-09-24 10:35:00,124 - trading_bot - INFO - get_market_data:679 - Volume: 1,234,567 USDT, Open Interest: 987,654 contracts
+
+2025-09-24 10:40:30,456 - trading_bot - INFO - cleanup:789 - Performing cleanup operations
+2025-09-24 10:40:30,457 - trading_bot - INFO - cleanup:790 - Closing WebSocket connections
+2025-09-24 10:40:30,458 - trading_bot - INFO - cleanup:791 - Trading session ended successfully
+

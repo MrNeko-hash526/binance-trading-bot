@@ -1,0 +1,36 @@
+2025-09-24 10:00:13,124 - {"timestamp": "2025-09-24T10:00:13.124Z", "event_type": "MARKET_ORDER_FILLED", 
+"order_id": "12345678", "symbol": "BTCUSDT", "side": "BUY", "quantity": "0.01000", "price": "43251.20",
+ "commission": "0.43251", "commission_asset": "USDT", "realized_pnl": "0.00", "order_type": "MARKET", 
+ "execution_time": "2025-09-24T10:00:13.123Z", "account_balance": "9999.56749", "position_size": "0.01000",
+  "avg_entry_price": "43251.20"}
+
+2025-09-24 10:05:30,790 - {"timestamp": "2025-09-24T10:05:30.790Z", "event_type": "LIMIT_ORDER_PLACED", 
+"order_id": "12345679", "symbol": "BTCUSDT", "side": "SELL", "quantity": "0.01000", "price": "43500.00",
+ "order_type": "LIMIT", "status": "NEW", "time_in_force": "GTC", "account_balance": "9999.56749", "position_size": "0.01000"}
+
+2025-09-24 10:08:45,456 - {"timestamp": "2025-09-24T10:08:45.456Z", "event_type": "LIMIT_ORDER_FILLED", 
+"order_id": "12345679", "symbol": "BTCUSDT", "side": "SELL", "quantity": "0.01000", "price": "43485.75", 
+"commission": "0.43486", "commission_asset": "USDT", "realized_pnl": "2.34550", "order_type": "LIMIT",
+ "execution_time": "2025-09-24T10:08:45.445Z", "account_balance": "10002.34813", "position_size": "0.00000",
+  "trade_profit": "234.55", "trade_profit_percentage": "0.54"}
+
+2025-09-24 10:25:45,891 - {"timestamp": "2025-09-24T10:25:45.891Z", "event_type": "STOP_LIMIT_ORDER_PLACED", "order_id": "12345680",
+ "symbol": "BTCUSDT", "side": "SELL", "quantity": "0.01000", "stop_price": "42800.00", "price": "42750.00", "order_type": "STOP_MARKET", 
+ "status": "NEW", "time_in_force": "GTC", "account_balance": "10002.34813", "position_size": "0.01000"}
+
+2025-09-24 10:30:12,678 - {"timestamp": "2025-09-24T10:30:12.678Z", "event_type": "ORDER_CANCELLED", "order_id": "12345680", 
+"symbol": "BTCUSDT", "side": "SELL", "quantity": "0.01000", "price": "42750.00", "order_type": "STOP_MARKET", "status": "CANCELED",
+ "reason": "USER_REQUESTED", "account_balance": "10002.34813", "position_size": "0.01000"}
+
+2025-09-24 11:15:22,345 - {"timestamp": "2025-09-24T11:15:22.345Z", "event_type": "MARKET_ORDER_FILLED", 
+"order_id": "12345681", "symbol": "ETHUSDT", "side": "BUY", "quantity": "0.10000", "price": "2456.78", 
+"commission": "0.24568", "commission_asset": "USDT", "realized_pnl": "0.00", "order_type": "MARKET", 
+"execution_time": "2025-09-24T11:15:22.340Z", "account_balance": "9756.33245", "position_size": "0.10000", "avg_entry_price": "2456.78"}
+
+2025-09-24 11:45:10,567 - {"timestamp": "2025-09-24T11:45:10.567Z", "event_type": "LIMIT_ORDER_FILLED", "order_id": "12345682",
+ "symbol": "ETHUSDT", "side": "SELL", "quantity": "0.10000", "price": "2478.90", "commission": "0.24789", "commission_asset": "USDT", 
+ "realized_pnl": "2.21200", "order_type": "LIMIT", "execution_time": "2025-09-24T11:45:10.560Z", "account_balance": "9978.29656", "position_size": "0.00000",
+  "trade_profit": "221.20", "trade_profit_percentage": "0.90"}
+
+2025-09-24 12:30:45,123 - {"timestamp": "2025-09-24T12:30:45.123Z", "event_type": "POSITION_CLOSED", "symbol": "BTCUSDT", "total_realized_pnl": "234.55",
+ "total_commission": "0.86737", "net_profit": "233.68263", "trades_count": 2, "session_duration": "2h30m", "roi_percentage": "2.34"}
