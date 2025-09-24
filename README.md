@@ -60,7 +60,7 @@ python main.py
 
 ## Project Structure
 
-\`\`\`
+```
 binance-trading-bot/
 ├── main.py              # Entry point
 ├── bot.py               # Core trading bot class
@@ -102,7 +102,7 @@ binance-trading-bot/
 
 ### Example Trading Session
 
-\`\`\`
+```
 BINANCE FUTURES TRADING BOT
 ==================================================
 1. Place Market Order
