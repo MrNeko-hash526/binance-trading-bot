@@ -130,7 +130,6 @@ Confirm order? (y/n): y
 
 Placing market order...
 
-==================================================
 ORDER EXECUTION SUMMARY
 ==================================================
 Order ID: 123456789
